@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="content/css/indes.css">
+            <link rel="shortcut icon" href="assets/favico.ico">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet"> 
+            <title>Calculadora de IMC</title>
+        </head>
+        <body>
+            <div class="page-content">
+                <h1>Calcule seu IMC</h1>
+                <p>O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Mais informações <a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal" target="_blank">aqui.</a></p>
+                <form action="">
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="peso">Peso</label>
+                            <input class="peso" type="number" step="0.01" min="25" max="140" name="peso" autofocus required>
+                        </div>
+                        <div class="field">
+                            <label for="altura">Altura</label>
+                            <input class="altura" type="number" step="0.01" min="1" max="2.6" name="altura" required>
+                        </div>
+                    </div>
+                    <button type="submit"></span><strong>Calcular</strong></button> 
+                </form>
+                <span class="resultado"></span>
+            </div>
+        </body>
+        <script type="text/javascript" src="content/js/index.js"></script>
+    </html>
