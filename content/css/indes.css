@@ -24,13 +24,26 @@ label{
 }
 
 p{
-    max-width: 50vw;
     margin-left: 1vw;
     text-align: justify;
 }
 
 a{
     text-decoration: none;
+}
+
+ul{
+    list-style: none;
+
+    margin-top: 2vw;
+    
+    border-color: #005468;
+    border-style: solid;
+    border-radius: 1vw;
+}
+
+li{
+    margin: 0.5vw;
 }
 
 button{
@@ -74,12 +87,41 @@ input{
     margin-bottom: 2vw;
 }
 
-@media(min-width: 1000px){
+.resultado{
+    display: flex;
+    justify-content: center;
+    
+    max-width: 40vw;
+}
+
+@media(min-width: 340px){
+    body{
+        font-size: 4vw;
+    }
+
+    p{
+        max-width: none;
+    }
+}
+
+
+@media(min-width: 600px){
+    body{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 800px){
     .page-content{
-        height: 90vh;
+        height: 100vh;
         background-image: url('../../assets/43069.jpg');
-        background-size: 40vw;
+        background-size: 35vw;
         background-repeat: no-repeat;
-        background-position: 55vw;
+        background-position-x: 60vw;
+        background-position-y: 15vw;
+    }
+
+    body{
+        font-size: 1.5vw;
     }
 }
