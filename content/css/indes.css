@@ -4,6 +4,9 @@ body{
     font-size: 1.3vw;
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
 h1{
@@ -26,6 +29,7 @@ label{
 p{
     margin-left: 1vw;
     text-align: justify;
+    margin-right: 1vw;
 }
 
 a{
@@ -34,7 +38,6 @@ a{
 
 ul{
     list-style: none;
-
     margin-top: 2vw;
     
     border-color: #005468;
@@ -47,8 +50,6 @@ li{
 }
 
 button{
-    height: 3vw;
-
     background-color: #00bbbc;
     border-color: #00bbbc;
 
@@ -56,9 +57,7 @@ button{
     font-size: 1em;
     
     max-inline-size: 6em;
-    margin-left: 2vw;
-    
-    border-radius: 0.5vw;
+    margin-left: 2vw;    
 }
 
 button:hover{
@@ -68,10 +67,6 @@ button:hover{
 
 
 input{
-    font-size: 1em;
-    border-radius: 0.5vw;
-    max-width: 20vw;
-    height: 2vw;
     background-color: rgba(63, 210, 142, 0.05);
 }
 
@@ -90,11 +85,11 @@ input{
 .resultado{
     display: flex;
     justify-content: center;
-    
-    max-width: 40vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
-@media(min-width: 340px){
+@media  only screen and (min-width: 340px){
     body{
         font-size: 4vw;
     }
@@ -102,12 +97,60 @@ input{
     p{
         max-width: none;
     }
+
+    input{
+        font-size: 4vw;
+        height: 4.5vw;
+        max-width: 80vw;
+        border-radius: 1.4vw;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    .resultado{
+        max-width: none;
+    }
+    button{
+        height: 8vw;
+        border-radius: 1.4vw;
+    }
 }
 
 
 @media(min-width: 600px){
     body{
         font-size: 2vw;
+    }
+
+    .resultado{
+        max-width: none;
+    }
+
+    form{
+        justify-content: center;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    input{
+        font-size: 2vw;
+        height: 2.5vw;
+        max-width: 40vw;
+        border-radius: 0.7vw;
+    }
+
+    button{
+        height: 4vw;
+        border-radius: 0.7vw;
+    }
+
+    ul{
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 }
 
@@ -117,11 +160,35 @@ input{
         background-image: url('../../assets/43069.jpg');
         background-size: 35vw;
         background-repeat: no-repeat;
-        background-position-x: 60vw;
+        background-position-x: 50vw;
         background-position-y: 15vw;
+    }
+
+    form{
+        align-items: flex-start;
     }
 
     body{
         font-size: 1.5vw;
+    }
+
+    .resultado{
+        max-width: 40vw;
+    }
+
+    input{
+        font-size: 1.5vw;
+        height: 2vw;
+        max-width: 20vw;
+        border-radius: 0.5vw;
+    }
+
+    ul{
+        padding: 0.5vw;
+    }
+
+    button{
+        height: 3vw;
+        border-radius: 0.5vw;
     }
 }
